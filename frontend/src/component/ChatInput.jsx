@@ -46,7 +46,7 @@ const ChatInput = () => {
 
       // Send message to server
       const response = await axios.post(
-        `http://localhost:5015/api/messages/send/${selectedUser._id}`,
+        `https://chat-app1-backend-mius.onrender.com/api/messages/send/${selectedUser._id}`,
         { text: message, image: base64Image },
         { headers: { token } }
       );

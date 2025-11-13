@@ -16,7 +16,7 @@ const ConnectUserContext = ({ children }) => {
   const [onlineUsers, setOnlineUsers] = useState([]);
   const navigate = useNavigate();
 
-  const BASE_URL = "http://localhost:5015"; // ✅ match your backend
+  const BASE_URL = "https://chat-app1-backend-mius.onrender.com"; // ✅ match your backend
 
   // 🟢 LOGIN
   const login = async (formData) => {
